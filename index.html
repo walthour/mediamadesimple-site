@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Media Made Simple — Brand-Forward Performance Marketing</title>
   <meta name="description" content="Brand-forward, performance-driven marketing agency. We help DTC and ecommerce brands scale through multichannel strategy, optimized media buying, and creative campaigns that drive ROI." />
-  <meta name="theme-color" content="#111821" />
+  <meta name="theme-color" content="#ffffff" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Media Made Simple — Brand-Forward Performance Marketing" />
@@ -19,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
@@ -47,8 +47,12 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <h1 class="hero__eyebrow">Brand-Forward<span>.</span></h1>
-        <h1 class="hero__eyebrow" style="margin-top:-0.5rem;">Performance Marketing<span>.</span></h1>
+        <h1 class="hero__title">
+          <span class="pill">Brand-Forward</span><span class="period">.</span>
+        </h1>
+        <h1 class="hero__title" style="margin-top:-0.2em;">
+          Performance Marketing<span class="period">.</span>
+        </h1>
         <p class="hero__lede">We increase your brand's presence through effective multichannel marketing strategies and optimized media-buying that scale seamlessly and yield sustained success.</p>
         <div class="hero__ctas">
           <a href="/contact.html" class="btn btn--primary">Schedule a Strategy Call</a>
@@ -57,56 +61,58 @@
       </div>
     </section>
 
-    <!-- LOGO STRIP -->
-    <section class="logo-strip" aria-label="Featured in">
-      <div class="container">
-        <div class="logo-strip__inner">
-          <img src="/assets/img/partner-1.webp" alt="" loading="lazy" />
-          <img src="/assets/img/partner-2.webp" alt="" loading="lazy" />
-          <img src="/assets/img/partner-3.png" alt="" loading="lazy" />
-          <img src="/assets/img/partner-4.svg" alt="" loading="lazy" />
-          <img src="/assets/img/partner-5.svg" alt="" loading="lazy" />
-        </div>
+    <!-- LOGO MARQUEE -->
+    <section class="logo-strip" aria-label="Featured brands">
+      <div class="marquee" role="list">
+        <!-- First copy of logos -->
+        <div class="marquee__item"><img src="/assets/img/partner-2.webp" alt="Happily" loading="lazy" /></div>
+        <div class="marquee__item"><img src="/assets/img/partner-3.png" alt="Good Ranchers" loading="lazy" /></div>
+        <div class="marquee__item"><img src="/assets/img/partner-4.svg" alt="The Peach Truck" loading="lazy" /></div>
+        <div class="marquee__item"><img src="/assets/img/partner-5.svg" alt="Betterway Health" loading="lazy" /></div>
+        <div class="marquee__item"><img src="/assets/img/partner-1.webp" alt="Love Ur Self" loading="lazy" /></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee__item" aria-hidden="true"><img src="/assets/img/partner-2.webp" alt="" loading="lazy" /></div>
+        <div class="marquee__item" aria-hidden="true"><img src="/assets/img/partner-3.png" alt="" loading="lazy" /></div>
+        <div class="marquee__item" aria-hidden="true"><img src="/assets/img/partner-4.svg" alt="" loading="lazy" /></div>
+        <div class="marquee__item" aria-hidden="true"><img src="/assets/img/partner-5.svg" alt="" loading="lazy" /></div>
+        <div class="marquee__item" aria-hidden="true"><img src="/assets/img/partner-1.webp" alt="" loading="lazy" /></div>
       </div>
     </section>
 
     <!-- PULLQUOTE -->
     <section class="pullquote">
+      <div class="pullquote__mark" aria-hidden="true">💬</div>
       <q>Media Made Simple is my go-to for brands looking to partner with a trustworthy agency.</q>
       <div class="pullquote__author">Sarah Levinger</div>
       <div class="pullquote__role">Top Consumer Behavior &amp; Performance Strategist</div>
     </section>
 
     <!-- WE'RE JUST DIFFERENT -->
-    <section class="section" id="about">
+    <section class="section section--dots" id="about">
       <div class="container">
         <div class="two-col">
           <div>
             <span class="eyebrow">About</span>
-            <h2>We're Just<br/>Different<span style="color:var(--color-blue)">.</span></h2>
+            <h2 class="big-h">We're Just<br/>Different<span class="ellipsis">…</span></h2>
           </div>
           <div>
             <p>We are a brand-first, performance-driven marketing agency that specializes in helping businesses grow their market share in a very crowded Ecommerce world. We know that building a recognizable brand is important for long-term growth and influence.</p>
             <p>That's why we create strategies and creative campaigns that increase revenue, maximize return on advertising spend, and increase brand recognition.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- BRAND FIRST / PERFORMANCE MARKETING -->
-    <section class="section section--surface">
-      <div class="container">
-        <div class="two-col">
-          <div>
-            <h2>Brand <span style="color:var(--color-blue)">First.</span></h2>
+        <!-- Brand First / Performance Marketing as paired cards -->
+        <div class="brand-cards" style="margin-top: clamp(3rem, 6vw, 5rem);">
+          <article class="brand-card">
+            <h2>Brand <span class="period">First<span class="period">.</span></span></h2>
             <p>Your brand is more than a logo or name. It's what you do. It's who you are, and it's what you promise.</p>
             <p>We have extensive experience working with small and large international brands, helping them achieve better marketing results while increasing their brand visibility. And we can do the same for you.</p>
-          </div>
-          <div>
-            <h2>Performance <span style="color:var(--color-blue)">Marketing.</span></h2>
+          </article>
+          <article class="brand-card">
+            <h2>Performance <span class="period">Marketing<span class="period">.</span></span></h2>
             <p>We are committed to driving tangible results for our clients through performance marketing. By leveraging data-driven insights and innovative strategies, we optimize your marketing campaigns to achieve maximum impact.</p>
             <p>Our goal is always to deliver exceptional ROI and sustainable revenue growth, empowering your business to scale and thrive in the competitive digital landscape.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -114,11 +120,13 @@
     <!-- WHAT WE DO -->
     <section class="section section--dark" id="services">
       <div class="container">
-        <span class="eyebrow">Services</span>
-        <h2 style="margin-bottom:2.5rem;">What We Do<span style="color:var(--color-blue)">…</span></h2>
+        <div class="section__head">
+          <span class="eyebrow">Services</span>
+          <h2>What We Do<span class="period blue">…</span></h2>
+        </div>
         <div class="services-grid">
           <div class="service-card">Paid Social Media Marketing</div>
-          <div class="service-card">Google Ads <span style="display:block;font-weight:400;font-size:0.95rem;color:var(--color-text-on-dark-muted);margin-top:0.5rem;">(Google Search, Shopping, YouTube)</span></div>
+          <div class="service-card">Google Ads <span class="sub">(Google Search, Shopping, YouTube)</span></div>
           <div class="service-card">Digital Marketing Financial Planning</div>
           <div class="service-card">Performance Creative &amp; Copywriting</div>
           <div class="service-card">Digital Media Strategy &amp; Execution</div>
@@ -129,8 +137,10 @@
     <!-- TESTIMONIALS -->
     <section class="section section--surface">
       <div class="container">
-        <span class="eyebrow">Testimonials</span>
-        <h2 style="margin-bottom:2.5rem;">What Clients Say<span style="color:var(--color-blue)">…</span></h2>
+        <div class="section__head">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="big-h">What Clients Say<span class="ellipsis">…</span></h2>
+        </div>
         <div class="testimonials">
           <article class="testimonial">
             <div class="testimonial__stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
@@ -179,8 +189,10 @@
     <!-- PROCESS -->
     <section class="section section--dark">
       <div class="container">
-        <span class="eyebrow">Process</span>
-        <h2 style="margin-bottom:2.5rem;">We Make Working Together Simple<span style="color:var(--color-blue)">…</span></h2>
+        <div class="section__head">
+          <span class="eyebrow">Process</span>
+          <h2>We Make Working Together Simple<span class="period blue">…</span></h2>
+        </div>
         <div class="process">
           <article class="step">
             <span class="step__num">0. YOU PICK US!</span>
@@ -217,10 +229,12 @@
     </section>
 
     <!-- DELIVERABLES -->
-    <section class="section">
+    <section class="section section--dots">
       <div class="container">
-        <span class="eyebrow">Deliverables</span>
-        <h2 style="margin-bottom:2.5rem;">What We Deliver<span style="color:var(--color-blue)">…</span></h2>
+        <div class="section__head">
+          <span class="eyebrow">Deliverables</span>
+          <h2 class="big-h">What We Deliver<span class="ellipsis">…</span></h2>
+        </div>
         <div class="deliverables">
           <article class="deliverable">
             <h3>Detailed Analytics &amp; Actionable Intelligence</h3>
@@ -242,13 +256,15 @@
     </section>
 
     <!-- RIGHT FIT -->
-    <section class="section section--surface">
+    <section class="section">
       <div class="container">
-        <span class="eyebrow">Fit Check</span>
-        <h2 style="margin-bottom:2.5rem;">The Right Fit<span style="color:var(--color-blue)">…</span></h2>
+        <div class="section__head">
+          <span class="eyebrow">Fit Check</span>
+          <h2 class="big-h">The Right Fit<span class="ellipsis">…</span></h2>
+        </div>
         <div class="split">
           <div class="split__card">
-            <h3>We're the right fit if<span style="color:var(--color-blue)">…</span></h3>
+            <h3>We're the right fit if<span class="period blue">…</span></h3>
             <ul>
               <li>You run an exceptional DTC brand and are eager to focus on profitable scaling.</li>
               <li>You prioritize creativity, collaboration, and seek genuine partners for your marketing efforts.</li>
@@ -257,7 +273,7 @@
             </ul>
           </div>
           <div class="split__card split__card--neg">
-            <h3>We're NOT the right fit if<span style="color:var(--color-blue)">…</span></h3>
+            <h3>We're NOT the right fit if<span class="period blue">…</span></h3>
             <ul>
               <li>You've lost your passion for your brand's ability to impact the world and only care about quick financial wins.</li>
               <li>You prefer soulless algorithms and automation over humans with innovative ideas, strategic plans, and creative passion.</li>
@@ -269,7 +285,7 @@
       </div>
     </section>
 
-    <!-- FOUNDER / BIG AGENCY SMALL TOUCH -->
+    <!-- FOUNDER -->
     <section class="section section--dark">
       <div class="container">
         <div class="founder">
