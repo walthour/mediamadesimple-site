@@ -47,6 +47,11 @@
 
     <div class="container" style="margin-top:3rem;">
       <form class="contact-wrap" id="contact-form" novalidate>
+        <!-- Honeypot — hidden from humans, bots fill it -->
+        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+          <label for="company_website">Company website (leave blank)</label>
+          <input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required autocomplete="name" />
