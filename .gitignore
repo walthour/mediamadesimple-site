@@ -6,3 +6,6 @@
 node_modules
 _scrape/
 _reference/
+
+# Local sync log (workspace-specific)
+.sync_log
